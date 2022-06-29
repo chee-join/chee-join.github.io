@@ -1,40 +1,167 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "GenShinGothic";
+    font-family: GenShinGothic;
     src: url("../fonts/GenShinGothic-Bold.woff") format("woff");
     font-weight: 700;
 }
 
 @font-face {
-    font-family: "GenShinGothic";
+    font-family: GenShinGothic;
     src: url("../fonts/GenShinGothic-Heavy.woff") format("woff");
     font-weight: 900;
 }
 
 @font-face {
-    font-family: "GenShinGothic";
+    font-family: GenShinGothic;
     src: url("../fonts/GenShinGothic-Medium.woff") format("woff");
     font-weight: 500;
 }
 
 @font-face {
-    font-family: "HannariMincho";
+    font-family: HannariMincho;
     src: url("../fonts/HannariMincho-Regular.woff") format("woff");
     font-weight: 400;
 }
+
 @font-face {
-    font-family: "NotoSansJP";
+    font-family: NotoSansJP;
     src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
     font-weight: 500;
 }
+
 @font-face {
-    font-family: "Philosopher";
+    font-family: Philosopher;
     src: url("../fonts/Philosopher-Italic.woff") format("woff");
     font-weight: italic;
 }
+
 @font-face {
-    font-family: "Philosopher";
+    font-family: Philosopher;
     src: url("../fonts/Philosopher-Regular.woff") format("woff");
     font-weight: 400;
+}
+
+/* 共通項目 */
+html {
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+        font-size: 1vw;
+    }
+}
+
+
+body {
+    font-size: 1.6rem;
+    color: #212529;
+    font-family: NotoSansJP, "Helvetica Neue", Arial, "Hiragino Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.container {
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        padding: 0 4rem;
+    }
+}
+
+.contents_width {
+    width: 100%;
+    max-width: 108.6rem;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 1023px) {
+    .contents_width {
+        width: 100%;
+        max-width: 29.3rem;
+        margin: 0 auto;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.font_philosopher {
+    font-family: Philosopher;
+    font-weight: 400;
+}
+
+.font_Hannari {
+    font-family: HannariMincho;
+    font-weight: 400;
+}
+
+/* header */
+header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: 66.62vw;
+}
+
+header .contents_width {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 135.4rem;
+}
+
+.header_wrapper {
+    max-width: 63rem;
+
+}
+
+.header_wrapper h1 {
+    font-size: 7rem;
+    line-height: calc(80 / 70);
+    letter-spacing: .12em;
+    color: #63977E;
+    padding-top: 7.3rem;
+}
+
+.header_wrapper p {
+    font-size: 2.8rem;
+    line-height: calc(36 / 28);
+    letter-spacing: .08em;
+    padding-top: 1.5rem;
+}
+
+.header_img {
+    display: block;
+    width: 60%;
+    margin: 5rem auto 5.5rem;
+}
+
+header .underline {
+    background: linear-gradient(transparent calc(100% - 8px), #b391a2 calc(100% - 8px));
+
+}
+.header_text_01 {
+    font-size: 3.4rem;
+    line-height: calc(36 / 34);
+}
+
+.header_text_02 {
+    font-size: 4.5rem;
+    line-height: 1.5;
+    background: linear-gradient(transparent calc(100% - 13px), #b391a2 calc(100% - 13px));
 }
