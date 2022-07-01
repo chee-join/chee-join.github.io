@@ -48,6 +48,8 @@ html {
 }
 
 body {
+    font-size: 1.17vw;
+    /* 16px/1366px */
     color: #212529;
     font-family: NotoSansJP, "Helvetica Neue", Arial, "Hiragino Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
@@ -65,7 +67,7 @@ body {
 
 * {
     box-sizing: border-box;
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 .sp_only {
@@ -95,8 +97,7 @@ li {
     font-weight: 400;
 }
 
-
-header {
+.font_ header {
     background-image: url(../images/header.jpg);
     background-size: cover;
     height: 66.62vw;
@@ -153,10 +154,117 @@ header .wrapper img {
     line-height: 1.5;
 }
 
+#instagram .instagram_title {
+    text-align: center;
+    padding-top: 2.86vw;
+}
+
+#instagram .instagram_title p {
+    padding-top: 1.24vw;
+    font-size: 2.49vw;
+}
+
+#instagram .instagram_post {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3.29vw;
+    padding-bottom: 4.39vw;
+}
+
+#instagram .instagram_post .posting {
+    width: 12.5179vw;
+    height: 37.85vw;
+    border: solid 1px #a9a9a9;
+    object-fit: cover;
+}
+
+#instagram .instagram_post .posting .icon_img {
+    width: 2.34vw;
+    margin: 0.37vw
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#instagram .instagram_post .posting .posting_text {
+    padding: 1.1rem 0.3rem;
+    line-height: calc(20 /16)
+}
+
+#instagram .instagram_post .posting .posting_date {
+    text-align: right;
+    padding-top: 2.3rem;
+}
+
+.campaign {
+    background-image: url(../images/cv.jpg);
+    background-size: cover;
+
+}
+
+.campaign .contents_width {
+    padding: 4.54vw 0;
+}
+
+.campaign_img {
+    width: 29.36vw;
+}
+
+.campaign .capacity {
+    font-size: 2.05vw;
+    padding-top: 1.32vw;
+    text-align: center;
+}
+
+.campaign h3 {
+    font-size: 5.5rem;
+}
+
+.campaign h3+div {
+    font-size: 2.8rem;
+    padding-bottom: 2.5rem;
+    border-bottom: solid 1px #91b3a2;
+}
+
+.flex_s {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 9.6rem;
+}
+
+.campaign .flex_s div:first-child {
+    padding-right: 5.2rem;
+}
+
+.campaign .flex {
+    padding-top: 3.9rem;
+}
+
+.campaign .usual_price_01 {
+    font-size: 2.7rem;
+}
+
+.campaign .usual_price_02 {
+    font-size: 3rem;
+}
+
+
+
+
 @media (max-width: 1024px) {
+    html {
+        font-size: 1vw;
+    }
 
     .sp_only {
         display: block;
+    }
+
+    .pc_only {
+        display: none;
     }
 
     header {
@@ -228,4 +336,36 @@ header .wrapper img {
         top: 115vw;
     }
 
+    #instagram .instagram_title {
+        padding-top: 5.87vw;
+    }
+
+    #instagram .instagram_title p {
+        padding-top: 1.33vw;
+        font-size: 3.36vw;
+    }
+
+    #instagram .instagram_post {
+        gap: 2.67vw;
+        padding-top: 4vw;
+        padding-bottom: 12.53vw;
+    }
+
+    #instagram .instagram_post .posting {
+        width: 22.67vw;
+        height: 79.2vw;
+    }
+
+    #instagram .instagram_post .posting .icon_img {
+        width: 4vw;
+        margin: 1.6vw;
+    }
+
+    /* #instagram .instagram_post .posting .posting_text {
+        font-size: 2.4vw;
+    } */
+
+    #instagram .instagram_post .posting .posting_date {
+        padding-right: 1.87vw;
+    }
 }
