@@ -97,7 +97,18 @@ li {
     font-weight: 400;
 }
 
-.font_ header {
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex_sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
     background-image: url(../images/header.jpg);
     background-size: cover;
     height: 66.62vw;
@@ -136,6 +147,11 @@ header .wrapper img {
     display: inline-block;
     background: linear-gradient(transparent calc(100% - .59vw), #b391a2 calc(100% - 59vw));
 
+}
+
+.underline_medium {
+    display: inline-block;
+    background: linear-gradient(transparent calc(100% - .81vw), #b391a2 calc(100% - .81vw));
 }
 
 .underline_bold {
@@ -183,11 +199,7 @@ header .wrapper img {
     margin: 0.37vw
 }
 
-.flex {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 
 #instagram .instagram_post .posting .posting_text {
     padding: 1.1rem 0.3rem;
@@ -202,7 +214,6 @@ header .wrapper img {
 .campaign {
     background-image: url(../images/cv.jpg);
     background-size: cover;
-
 }
 
 .campaign .contents_width {
@@ -220,39 +231,86 @@ header .wrapper img {
 }
 
 .campaign h3 {
-    font-size: 5.5rem;
+    font-size: 4.03vw;
 }
 
 .campaign h3+div {
-    font-size: 2.8rem;
-    padding-bottom: 2.5rem;
+    font-size: 2vw;
+    padding-bottom: 1.83vw;
     border-bottom: solid 1px #91b3a2;
 }
 
-.flex_s {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 9.6rem;
+
+
+.campaign .flex_sb {
+    padding-top: 7.03vw;
 }
 
-.campaign .flex_s div:first-child {
-    padding-right: 5.2rem;
-}
-
-.campaign .flex {
-    padding-top: 3.9rem;
+.campaign .price_box .flex {
+    padding-top: 2vw;
+    padding-bottom: 2.5vw;
 }
 
 .campaign .usual_price_01 {
-    font-size: 2.7rem;
+    position: relative;
+    font-size: 2vw;
+}
+
+.campaign .usual_price_01::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent 50%, #000 50%, #000 55%, transparent 55%);
 }
 
 .campaign .usual_price_02 {
-    font-size: 3rem;
+    font-size: 2.2vw;
 }
 
+.campaign .bargain_price {
+    color: #ff0000;
+    font-size: 7.91vw;
+    padding-left: 1.61vw;
+}
 
+.campaign .bargain_price span {
+    font-family: NotoSansJP;
+    font-weight: 500;
+    font-size: 3.9vw;
+}
 
+.campaign .bargain_price span+span {
+    color: #212529;
+    font-size: 2vw;
+}
+
+.campaign .btn {
+    font-size: 3.73vw;
+    color: #fff;
+    letter-spacing: .1em;
+    width: 100%;
+    background: linear-gradient(#afc8bb, #91b3a2);
+    border-radius: .8vw;
+    padding: 1.05vw 0;
+    cursor: pointer;
+}
+
+.campaign .price_box .lead {
+    padding-top: 1.5vw;
+}
+
+.campaign .price_box .lead .cancel {
+    color: #bc0000;
+    font-size: 3vw;
+}
+
+.campaign .price_box .lead .limit {
+    font-size: 2.12vw;
+    letter-spacing: 0.03em;
+}
 
 @media (max-width: 1024px) {
     html {
@@ -316,7 +374,8 @@ header .wrapper img {
         background: linear-gradient(transparent calc(100% - 1.07vw), #b391a2 calc(100% - 1.07vw));
     }
 
-    .header_title {
+    .block_title {
+        display: block;
         width: 72vw;
         margin: 0 auto;
     }
@@ -361,11 +420,81 @@ header .wrapper img {
         margin: 1.6vw;
     }
 
-    /* #instagram .instagram_post .posting .posting_text {
-        font-size: 2.4vw;
-    } */
-
     #instagram .instagram_post .posting .posting_date {
         padding-right: 1.87vw;
     }
+
+    .campaign {
+        background-image: url(../images/cv_sp.jpg);
+    }
+
+    .campaign .flex_sb {
+        padding-top: 5.33vw;
+    }
+
+    .campaign .campaign_img_sp {
+        width: 28.8vw;
+    }
+
+    .campaign .campaign_img_box .usual_price {
+        padding-top: 4vw;
+    }
+
+    .campaign .sp_only .usual_price_01 {
+        font-size: 3.36vw;
+    }
+
+    .campaign .sp_only .usual_price_02 {
+        font-size: 3.84vw;
+        padding-top: 1.6vw;
+    }
+
+    .campaign h3 {
+        font-size: 3.73vw;
+    }
+
+    .campaign h3+div {
+        font-size: 2.67vw;
+        padding-bottom: 1.5vw;
+    }
+
+    .campaign .capacity {
+        font-size: 2.88vw;
+        padding-top: 3vw;
+        text-align: left;
+    }
+
+    .campaign .price_box .flex {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .campaign .price_box .lead {
+        padding-top: 3vw;
+    }
+
+    .campaign .price_box .lead .cancel {
+        font-size: 3.47vw;
+    }
+
+    .campaign .price_box .lead .limit {
+        font-size: 2.67vw;
+        padding-top: 0;
+    }
+
+    .campaign .bargain_price {
+        font-size: 14.4vw;
+        padding-top: 2vw;
+    }
+
+    .campaign .btn {
+        font-size: 4.32vw;
+        letter-spacing: .6em;
+        width: 85%;
+        border-radius: 2.67vw;
+        padding: 2.4vw 0;
+        margin: 0 auto;
+        text-indent: 5vw
+    }
+
 }
