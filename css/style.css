@@ -76,6 +76,8 @@ body {
 
 img {
     max-width: 100%;
+    vertical-align: top;
+    vertical-align: bottom;
 }
 
 a {
@@ -160,6 +162,11 @@ header .wrapper img {
     line-height: 1.5;
 }
 
+.underline_extrabold {
+    display: inline-block;
+    background: linear-gradient(transparent calc(100% - 1.1vw), #b391a2 calc(100% - 1.1vw));
+}
+
 .header_text_01 {
     font-size: 2.49vw;
     line-height: calc(36 / 34);
@@ -228,11 +235,11 @@ header .wrapper img {
     text-align: center;
 }
 
-.campaign h3 {
+.campaign h4 {
     font-size: 4.03vw;
 }
 
-.campaign h3+div {
+.campaign h4+div {
     font-size: 2vw;
     padding-bottom: 1.83vw;
     border-bottom: solid 1px #91b3a2;
@@ -366,10 +373,8 @@ header .wrapper img {
 }
 
 #exhibit .contents_width h6 {
-    display: inline-block;
     font-size: 3.51vw;
     color: #63977E;
-    background: linear-gradient(transparent calc(100% - 1.1vw), #b391a2 calc(100% - 1.1vw));
     line-height: 1.5;
     margin-bottom: 3.37vw;
 }
@@ -414,6 +419,56 @@ header .wrapper img {
 
 .animate__animated {
     opacity: 0;
+}
+
+#point {
+    background-image: url(../images/benefit.jpg);
+    background-size: cover;
+}
+
+#point h3 {
+    font-size: 4.98vw;
+    font-family: HannariMincho;
+    line-height: calc(80 / 68);
+    color: #63977E;
+    text-align: center;
+    padding-top: 7.1vw;
+}
+
+#point .contents_width {
+    padding-top: 6.3vw;
+}
+
+#point .point_contents .point_text {
+    width: 43.05vw;
+    margin-right: 6.08vw;
+}
+
+#point .point_lead {
+    padding-bottom: 0.81vw;
+    border-bottom: solid 1px #212529;
+}
+
+#point .point_title {
+    font-size: 3.51vw;
+    font-family: HannariMincho;
+    line-height: calc(80 / 48);
+}
+
+#point .point_contents .point_text .description {
+    font-size: 1.98vw;
+    line-height: calc(40 / 27 );
+    padding-top: 1.21vw;
+}
+
+#point figure img {
+    width: 30.97vw;
+}
+
+#point figure figcaption {
+    font-size: 1.76vw;
+    line-height: calc(40 / 24) ;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -560,11 +615,11 @@ header .wrapper img {
         padding-top: 1.6vw;
     }
 
-    .campaign h3 {
+    .campaign h4 {
         font-size: 3.73vw;
     }
 
-    .campaign h3+div {
+    .campaign h4+div {
         font-size: 2.67vw;
         padding-bottom: 1.5vw;
     }
