@@ -199,8 +199,6 @@ header .wrapper img {
     margin: 0.37vw
 }
 
-
-
 #instagram .instagram_post .posting .posting_text {
     padding: 1.1rem 0.3rem;
     line-height: calc(20 /16)
@@ -242,6 +240,7 @@ header .wrapper img {
 
 .campaign .flex_sb {
     padding-top: 7.03vw;
+    padding-bottom: 3.2vw;
 }
 
 .campaign .price_box .flex {
@@ -351,7 +350,74 @@ header .wrapper img {
     line-height: 1;
 }
 
+#exhibit {
+    position: relative;
+}
+
+.exhibit_item_01 {
+    background-image: url(../images/exhibit1.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#exhibit .contents_width {
+    padding-top: 4.17vw;
+    padding-bottom: 9.3vw;
+}
+
+#exhibit .contents_width h6 {
+    display: inline-block;
+    font-size: 3.51vw;
+    color: #63977E;
+    background: linear-gradient(transparent calc(100% - 1.1vw), #b391a2 calc(100% - 1.1vw));
+    line-height: 1.5;
+    margin-bottom: 3.37vw;
+}
+
+#exhibit .contents_width .flex_sb .exhibit_text {
+    width: 45.39vw;
+}
+
+#exhibit .contents_width .flex_sb div p {
+    font-size: 1.98vw;
+}
+
+#exhibit .contents_width .flex_sb div p:nth-child(n + 2) {
+    padding-top: 3.66vw;
+}
+
+#exhibit .contents_width .flex_sb img {
+    width: 29.87vw;
+}
+
+#exhibit .arrow_img {
+    position: absolute;
+    left: 37.99vw;
+    top: 36vw;
+    z-index: 10;
+    width: 23.87vw;
+}
+
+#exhibit .exhibit02 {
+    background-image: url(../images/exhibit2.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#exhibit .exhibit02 .contents_width {
+    padding: 6.73vw 0;
+}
+
+#exhibit .exhibit02 .contents_width .reverse {
+    flex-direction: row-reverse;
+}
+
+.animate__animated {
+    opacity: 0;
+}
+
 @media (max-width: 1024px) {
+
     html {
         font-size: 1vw;
     }
@@ -505,7 +571,7 @@ header .wrapper img {
 
     .campaign .capacity {
         font-size: 2.88vw;
-        padding-top: 3vw;
+        padding-top: 4vw;
         text-align: left;
     }
 
@@ -515,7 +581,7 @@ header .wrapper img {
     }
 
     .campaign .price_box .lead {
-        padding-top: 3vw;
+        padding-top: 4vw;
     }
 
     .campaign .price_box .lead .cancel {
@@ -524,12 +590,12 @@ header .wrapper img {
 
     .campaign .price_box .lead .limit {
         font-size: 2.67vw;
-        padding-top: 0;
+        padding-top: 0.8vw;
     }
 
     .campaign .bargain_price {
         font-size: 14.4vw;
-        padding-top: 2vw;
+        padding-top: 5vw;
     }
 
     .campaign .btn {
@@ -554,7 +620,7 @@ header .wrapper img {
         font-size: 5vw;
     }
 
-    empathy .checkbox {
+    #empathy .checkbox {
         padding-top: 10.6vw;
         padding-bottom: 20vw;
     }
@@ -569,6 +635,49 @@ header .wrapper img {
 
     #empathy .checkbox .checklist:nth-child(n + 2) {
         padding-top: 5.8vw;
+    }
+
+    #exhibit .contents_width {
+        padding-top: 4.53vw;
+        padding-bottom: 9.6vw;
+    }
+
+    #exhibit .contents_width h6 {
+        font-size: 4.22vw;
+        margin-bottom: 5.87vw;
+    }
+
+    #exhibit .contents_width .flex_sb {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #exhibit .exhibit02 .contents_width .reverse {
+        flex-direction: column-reverse;
+    }
+
+    #exhibit .contents_width .flex_sb img {
+        width: 76.8vw;
+    }
+
+    #exhibit .contents_width .flex_sb .exhibit_text {
+        width: 100%;
+        padding: 1.33vw;
+    }
+
+    #exhibit .contents_width .flex_sb div p {
+        line-height: 1.65;
+        font-size: 3.36vw;
+    }
+
+    #exhibit .contents_width .flex_sb div p:nth-child(n + 2) {
+        padding-top: 0;
+    }
+
+    #exhibit .arrow_img {
+        left: 34.99vw;
+        top: 101vw;
+        width: 28.8vw;
     }
 
 }
