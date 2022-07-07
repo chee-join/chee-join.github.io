@@ -595,7 +595,7 @@ header .wrapper img {
 }
 
 #faq dl dd:last-child {
-    border-bottom:none;
+    border-bottom: none;
 }
 
 
@@ -942,6 +942,40 @@ header .wrapper img {
         font-size: 3.36vw;
         line-height: calc(18.9 / 12.6);
         padding-top: 1.33vw;
+    }
+
+    #faq {
+        background-image: url(../images/Q_A_sp.jpg);
+        background-size: cover;
+        height: auto;
+    }
+
+    #faq dl {
+        font-size: 3.36vw;
+        padding-top: 0;
+    }
+
+    #faq dl dt {
+
+        line-height: calc(18.9 / 12.6);
+        margin-top: 8vw;
+        padding-left: 6.67vw;
+    }
+
+    #faq dl dt::before {
+        font-size: 5.76vw;
+        transform: translateY(-30%);
+    }
+
+    #faq dl dd {
+        line-height: calc(18.9 / 12.6);
+        margin-top: 5.33vw;
+        padding: 0 0 6.67vw 6.67vw;
+    }
+
+    #faq dl dd::before {
+        font-size: 5.76vw;
+        transform: translateY(-30%);
     }
 
 }
