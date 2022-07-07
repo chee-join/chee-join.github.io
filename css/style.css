@@ -427,7 +427,8 @@ header .wrapper img {
 }
 
 #point h3,
-#use h3 {
+#use h3,
+#faq h3 {
     font-size: 4.98vw;
     font-family: HannariMincho;
     line-height: calc(80 / 68);
@@ -498,6 +499,10 @@ header .wrapper img {
     border-bottom: solid 1px #808080;
 }
 
+#use .step_box:last-child {
+    border-bottom: none;
+}
+
 #use .step_box .step_img {
     width: 34.99vw;
     margin: 1.61vw 5.34vw 3.29vw 0.51vw;
@@ -537,6 +542,62 @@ header .wrapper img {
     line-height: calc(40 / 27);
     padding-top: 4vw;
 }
+
+#faq {
+    background-image: url(../images/Q_A.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#faq dl {
+    font-size: 1.98vw;
+
+    padding-top: 5.12vw;
+}
+
+#faq dl dt {
+    position: relative;
+    line-height: calc(40 / 27);
+    margin-top: 4.98vw;
+    padding-left: 5.34vw;
+}
+
+#faq dl dt::before {
+    position: absolute;
+    content: 'Q.';
+    top: 0;
+    left: 0;
+    font-family: Philosopher;
+    font-weight: 400;
+    font-size: 3.95vw;
+    color: #5d8974;
+    transform: translateY(-40%);
+}
+
+#faq dl dd {
+    position: relative;
+    line-height: calc(40 / 27);
+    margin-top: 4.54vw;
+    border-bottom: solid 1px #808080;
+    padding: 0 2vw 5.48vw 5.34vw;
+}
+
+#faq dl dd::before {
+    position: absolute;
+    content: 'A.';
+    top: 0;
+    left: 0;
+    font-family: Philosopher;
+    font-weight: 400;
+    font-size: 3.95vw;
+    color: #9d3e3e;
+    transform: translateY(-40%);
+}
+
+#faq dl dd:last-child {
+    border-bottom:none;
+}
+
 
 
 
@@ -858,10 +919,6 @@ header .wrapper img {
     #use .step_box {
         margin-top: 5.3vw;
         padding-bottom: 5.3vw;
-    }
-
-    #use .step_box:last-child {
-        border-bottom: none;
     }
 
     #use .step_box .step_img {
