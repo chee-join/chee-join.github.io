@@ -1,0 +1,1194 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: GenShinGothic;
+    src: url("../fonts/GenShinGothic-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: GenShinGothic;
+    src: url("../fonts/GenShinGothic-Heavy.woff") format("woff");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: GenShinGothic;
+    src: url("../fonts/GenShinGothic-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: HannariMincho;
+    src: url("../fonts/HannariMincho-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: NotoSansJP;
+    src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url("../fonts/Philosopher-Italic.woff") format("woff");
+    font-weight: italic;
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url("../fonts/Philosopher-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+/* 共通項目 */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.17vw;
+    /* 16px/1366px */
+    color: #212529;
+    font-family: NotoSansJP, "Helvetica Neue", Arial, "Hiragino Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.container {
+    padding: 0 1.46vw;
+    overflow: hidden;
+}
+
+.contents_width {
+    width: 100%;
+    max-width: 82vw;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.sp_only {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    vertical-align: bottom;
+}
+
+a {
+    color: #212529;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.font_philosopher {
+    font-family: Philosopher;
+    font-weight: 400;
+}
+
+.font_Hannari {
+    font-family: HannariMincho;
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex_sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: 66.62vw;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    padding-top: 1.46vw;
+}
+
+.header_contents {
+    max-width: 46.12vw;
+}
+
+header .wrapper h1 {
+    font-size: 5.12vw;
+    letter-spacing: .12em;
+    color: #63977E;
+}
+
+header .wrapper p {
+    font-size: 2.05vw;
+    letter-spacing: .08em;
+    padding-top: 1.1vw;
+}
+
+header .wrapper img {
+    display: block;
+    max-width: 28.55vw;
+    margin: 3.66vw auto 4.03vw;
+}
+
+.underline {
+    display: inline-block;
+    background: linear-gradient(transparent calc(100% - .59vw), #b391a2 calc(100% - 59vw));
+
+}
+
+.underline_medium {
+    display: inline-block;
+    background: linear-gradient(transparent calc(100% - .81vw), #b391a2 calc(100% - .81vw));
+}
+
+.underline_bold {
+    display: inline-block;
+    background: linear-gradient(transparent calc(100% - .95vw), #b391a2 calc(100% - .95vw));
+    line-height: 1.5;
+}
+
+.underline_extrabold {
+    display: inline-block;
+    background: linear-gradient(transparent calc(100% - 1.1vw), #b391a2 calc(100% - 1.1vw));
+}
+
+.header_text_01 {
+    font-size: 2.49vw;
+    line-height: calc(36 / 34);
+}
+
+.header_text_02 {
+    font-size: 3.29vw;
+    line-height: 1.5;
+}
+
+#instagram .instagram_title {
+    text-align: center;
+    padding-top: 2.86vw;
+}
+
+#instagram .instagram_title p {
+    padding-top: 1.24vw;
+    font-size: 2.49vw;
+}
+
+#instagram .instagram_post {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3.29vw;
+    padding-bottom: 4.39vw;
+}
+
+#instagram .instagram_post .posting {
+    width: 12.5179vw;
+    height: 37.85vw;
+    border: solid 1px #a9a9a9;
+    object-fit: cover;
+}
+
+#instagram .instagram_post .posting .icon_img {
+    width: 2.34vw;
+    margin: 0.37vw
+}
+
+#instagram .instagram_post .posting .posting_text {
+    padding: 1.1rem 0.3rem;
+    line-height: calc(20 /16)
+}
+
+#instagram .instagram_post .posting .posting_date {
+    text-align: right;
+    padding-top: 2.3rem;
+}
+
+.campaign {
+    background-image: url(../images/cv.jpg);
+    background-size: cover;
+}
+
+.campaign .contents_width {
+    padding: 4.54vw 0;
+}
+
+.campaign_img {
+    width: 29.36vw;
+}
+
+.campaign .capacity {
+    font-size: 2.05vw;
+    padding-top: 1.32vw;
+    text-align: center;
+}
+
+.campaign h4 {
+    font-size: 4.03vw;
+}
+
+.campaign h4+div {
+    font-size: 2vw;
+    padding-bottom: 1.83vw;
+    border-bottom: solid 1px #91b3a2;
+}
+
+.campaign .flex_sb {
+    padding-top: 7.03vw;
+    padding-bottom: 3.2vw;
+}
+
+.campaign .price_box .flex {
+    padding-top: 2vw;
+    padding-bottom: 2.5vw;
+}
+
+.campaign .usual_price_01 {
+    position: relative;
+    font-size: 2vw;
+}
+
+.campaign .usual_price_01::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent 50%, #000 50%, #000 55%, transparent 55%);
+}
+
+.campaign .usual_price_02 {
+    font-size: 2.2vw;
+}
+
+.campaign .bargain_price {
+    color: #ff0000;
+    font-size: 7.91vw;
+    padding-left: 1.61vw;
+}
+
+.campaign .bargain_price span {
+    font-family: NotoSansJP;
+    font-weight: 500;
+    font-size: 3.9vw;
+}
+
+.campaign .bargain_price span+span {
+    color: #212529;
+    font-size: 2vw;
+}
+
+.campaign .btn {
+    font-size: 3.73vw;
+    color: #fff;
+    letter-spacing: .1em;
+    width: 100%;
+    background: linear-gradient(#afc8bb, #91b3a2);
+    border-radius: .8vw;
+    padding: 1.05vw 0;
+    cursor: pointer;
+}
+
+.campaign .price_box .lead {
+    padding-top: 1.5vw;
+}
+
+.campaign .price_box .lead .cancel {
+    color: #bc0000;
+    font-size: 3vw;
+}
+
+.campaign .price_box .lead .limit {
+    font-size: 2.12vw;
+    letter-spacing: 0.03em;
+}
+
+#empathy {
+    background-image: url(../images/empathy.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#empathy .contents_width {
+    padding-top: 3.25vw;
+}
+
+#empathy .contents_width h2 {
+    font-size: 5.3vw;
+    letter-spacing: 0.07em;
+    color: #63977E;
+}
+
+#empathy .contents_width .underline_bold {
+    line-height: 1.3;
+}
+
+#empathy .checkbox {
+    padding-top: 10.2vw;
+    padding-bottom: 12.15vw;
+}
+
+#empathy .checkbox .checklist:nth-child(n + 2) {
+    padding-top: 4.25vw;
+}
+
+#empathy .checkbox .checklist img {
+    display: inline-block;
+    width: 2.1vw;
+    margin: 0 1.83vw 0 0.37vw;
+}
+
+#empathy .checkbox .checklist span {
+    font-size: 2.05vw;
+    letter-spacing: 0.07em;
+    line-height: 1;
+}
+
+#exhibit {
+    position: relative;
+}
+
+.exhibit_item_01 {
+    background-image: url(../images/exhibit1.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#exhibit .contents_width {
+    padding-top: 4.17vw;
+    padding-bottom: 9.3vw;
+}
+
+#exhibit .contents_width h6 {
+    font-size: 3.51vw;
+    color: #63977E;
+    line-height: 1.5;
+    margin-bottom: 3.37vw;
+}
+
+#exhibit .contents_width .flex_sb .exhibit_text {
+    width: 45.39vw;
+}
+
+#exhibit .contents_width .flex_sb div p {
+    font-size: 1.98vw;
+}
+
+#exhibit .contents_width .flex_sb div p:nth-child(n + 2) {
+    padding-top: 3.66vw;
+}
+
+#exhibit .contents_width .flex_sb img {
+    width: 29.87vw;
+}
+
+#exhibit .arrow_img {
+    position: absolute;
+    left: 37.99vw;
+    top: 36vw;
+    z-index: 10;
+    width: 23.87vw;
+}
+
+#exhibit .exhibit02 {
+    background-image: url(../images/exhibit2.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#exhibit .exhibit02 .contents_width {
+    padding: 6.73vw 0;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.animate__animated {
+    opacity: 0;
+}
+
+#point {
+    background-image: url(../images/benefit.jpg);
+    background-size: cover;
+}
+
+#point h3,
+#use h3,
+#faq h3 {
+    font-size: 4.98vw;
+    font-family: HannariMincho;
+    line-height: calc(80 / 68);
+    color: #63977E;
+    text-align: center;
+    padding-top: 7.1vw;
+}
+
+#point .contents_width {
+    padding-top: 6.3vw;
+}
+
+#point .point_text {
+    width: 43.05vw;
+    margin-right: 6.08vw;
+}
+
+#point .point_lead {
+    padding-bottom: 0.81vw;
+    border-bottom: solid 1px #212529;
+}
+
+#point .point_title {
+    font-size: 3.51vw;
+    font-family: HannariMincho;
+    line-height: calc(80 / 48);
+}
+
+#point .point_text .description {
+    font-size: 1.98vw;
+    line-height: calc(40 / 27);
+    padding-top: 1.21vw;
+}
+
+#point figure img {
+    width: 30.97vw;
+}
+
+#point figure figcaption {
+    font-size: 1.76vw;
+    line-height: calc(40 / 24);
+    text-align: center;
+}
+
+#point .point_contents_r,
+#point .point_contents:nth-child(n + 2) {
+    margin-top: 7.1vw;
+}
+
+#point .point_contents_r .point_text {
+    width: 43.05vw;
+    margin-left: 6.08vw;
+    margin-right: 0;
+}
+
+.benefit_point1 {
+    opacity: 0;
+}
+
+#use {
+    background-image: url(../images/use.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#use .step_box {
+    margin-top: 5.64vw;
+    border-bottom: solid 1px #808080;
+}
+
+#use .step_box:last-child {
+    border-bottom: none;
+}
+
+#use .step_box .step_img {
+    width: 34.99vw;
+    margin: 1.61vw 5.34vw 3.29vw 0.51vw;
+}
+
+#use .step_text::before {
+    position: absolute;
+    top: 0;
+    right: 115%;
+    margin: 0 1rem;
+    content: '';
+    width: 1px;
+    height: 90%;
+    background-color: #808080;
+}
+
+#use .step_text {
+    position: relative;
+    width: 33.67vw;
+    margin-right: 20px;
+}
+
+#use .step_box .subtitle {
+    font-size: 3.59vw;
+    font-style: italic;
+    line-height: calc(80 / 49);
+    padding-top: 1.61vw;
+}
+
+#use .step_box .subtitle span {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+#use .step_box .subtitle_desc {
+    font-size: 1.98vw;
+    line-height: calc(40 / 27);
+    padding-top: 4vw;
+}
+
+#faq {
+    background-image: url(../images/Q_A.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+#faq dl {
+    font-size: 1.98vw;
+
+    padding-top: 5.12vw;
+}
+
+#faq dl dt {
+    position: relative;
+    line-height: calc(40 / 27);
+    margin-top: 4.98vw;
+    padding-left: 5.34vw;
+}
+
+#faq dl dt::before {
+    position: absolute;
+    content: 'Q.';
+    top: 0;
+    left: 0;
+    font-family: Philosopher;
+    font-weight: 400;
+    font-size: 3.95vw;
+    color: #5d8974;
+    transform: translateY(-40%);
+}
+
+#faq dl dd {
+    position: relative;
+    line-height: calc(40 / 27);
+    margin-top: 4.54vw;
+    border-bottom: solid 1px #808080;
+    padding: 0 2vw 5.48vw 5.34vw;
+}
+
+#faq dl dd::before {
+    position: absolute;
+    content: 'A.';
+    top: 0;
+    left: 0;
+    font-family: Philosopher;
+    font-weight: 400;
+    font-size: 3.95vw;
+    color: #9d3e3e;
+    transform: translateY(-40%);
+}
+
+#faq dl dd:last-child {
+    border-bottom: none;
+}
+
+#order .customer_wrapper {
+    padding-top: 5.05vw;
+}
+
+#order .order_title {
+    width: 100%;
+    background: #f1efed;
+    border-radius: 0.73vw;
+    font-family: GenShinGothic;
+    font-weight: 900;
+    font-size: 2.93vw;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 8vw;
+}
+
+#order .payment_wrapper {
+    padding: 6.5vw 0 6.9vw;
+}
+
+#order_form_area {
+    width: 100%;
+    height: auto;
+    border: solid 1px #808080;
+    border-radius: 10px;
+    padding: 5.1vw 5.1vw 6.7vw;
+}
+
+#order .form_column {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.6vw;
+    align-items: center;
+}
+
+#order .spacing {
+    margin-top: 6.9vw;
+}
+
+#order .form_label {
+    position: relative;
+    font-family: GenShinGothic;
+    font-weight: 700;
+    font-size: 1.98vw;
+    line-height: calc(40 / 27);
+}
+
+#order .required::after {
+    position: absolute;
+    content: '必須';
+    top: 0;
+    left: 20vw;
+     background: #ff0000;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.98vw;
+    font-family: 'GenShinGothic';
+    font-weight: 700;
+    width: 4.98vw;
+    height: 3.37vw;
+    text-align: center;
+}
+
+#order .optional::after {
+    position: absolute;
+    content: '任意';
+    top: 0;
+    left: 20vw;
+     background: #ddd;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.98vw;
+    font-family: 'GenShinGothic';
+    font-weight: 700;
+    width: 4.98vw;
+    height: 3.37vw;
+    text-align: center;
+}
+
+#order .form_input {
+    width: 45vw;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_nav {
+    position: relative;
+    font-size: 1.46vw;
+}
+
+footer .footer_nav::after {
+    position: absolute;
+    content: '|';
+    font-size: 1.46vw;
+}
+
+
+
+
+/* #order .form_input::nth-child(6) {
+    position: absolute;
+    content: '任意';
+    top: 0;
+    left: -8vw;
+    padding: 1.5vw;
+
+    background: #ddd;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.98vw;
+    font-family: 'GenShinGothic';
+    font-weight: 700;
+} */
+
+#order .form_parts {
+    font-family: GenShinGothic;
+    font-weight: 700;
+    font-size: 1.98vw;
+    line-height: calc(40 / 27);
+    color: #5a5a5a;
+    border: solid 1px #d3d3d3;
+    border-radius: 4px;
+}
+
+#order .short {
+    width: 25vw;
+    padding: 15px;
+}
+
+#order .long {
+    width: 45vw;
+    padding: 15px;
+}
+
+#order .payment_wrapper .payment {
+    padding: 0 2.5vw 6vw;
+    font-size: 1.98vw;
+    font-family: GenShinGothic;
+    font-weight: 700;
+    line-height: calc(40 / 27);
+}
+
+input[type=radio] {
+    width: 2.2vw;
+    height: 2.2vw;
+    vertical-align: middle;
+    margin-right: 0.7vw;
+}
+
+/* #order .payment_wrapper .payment:nth-child(n + 2) {
+    margin-top: 4vw;
+} */
+
+#order .payment_wrapper .payment .radio_lead {
+    margin-top: 4vw;
+}
+
+#form_submit {
+    margin-bottom: 6.5vw;
+    text-align: center;         
+}
+
+button#submit_button {
+    font-size: 4.1vw;
+    color: #fff;
+    width: 39vw;
+    height: 8.35vw;
+    background: linear-gradient(#91b3a2,#31a169);
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+
+    html {
+        font-size: 1vw;
+    }
+
+    .sp_only {
+        display: block;
+    }
+
+    .pc_only {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        background-image: url(../images/header_sp.jpg);
+        height: 145vw;
+    }
+
+    .container {
+        padding: 0 10vw;
+    }
+
+    .contents_width {
+        width: 100%;
+        max-width: 77vw;
+        margin: 0 auto;
+    }
+
+    header .wrapper {
+        display: block;
+    }
+
+    .header_contents {
+        max-width: 100%;
+        padding-top: 5.3vw;
+    }
+
+    header .wrapper h1 {
+        font-size: 8.27vw;
+    }
+
+    header .wrapper p {
+        font-size: 3.84vw;
+        color: #fff;
+        padding-top: 2.1vw;
+    }
+
+    header .wrapper img {
+        position: absolute;
+        top: 100vw;
+        left: 50vw;
+        max-width: 38.4vw;
+        margin: 0;
+    }
+
+    .underline {
+        display: inline-block;
+        background: linear-gradient(transparent calc(100% - .8vw), #b391a2 calc(100% - .8vw));
+
+    }
+
+    .underline_bold {
+        display: inline-block;
+        background: linear-gradient(transparent calc(100% - 1.07vw), #b391a2 calc(100% - 1.07vw));
+    }
+
+    .block_title {
+        display: block;
+        width: 72vw;
+        margin: 0 auto;
+    }
+
+    .header_text_01 {
+        font-size: 3.73vw;
+        color: #fff;
+    }
+
+    .header_text_02 {
+        font-size: 4.88vw;
+        color: #fff;
+    }
+
+    .header_box {
+        position: absolute;
+        top: 115vw;
+    }
+
+    #instagram .instagram_title {
+        padding-top: 5.87vw;
+    }
+
+    #instagram .instagram_title p {
+        padding-top: 1.33vw;
+        font-size: 3.36vw;
+    }
+
+    #instagram .instagram_post {
+        gap: 2.67vw;
+        padding-top: 4vw;
+        padding-bottom: 12.53vw;
+    }
+
+    #instagram .instagram_post .posting {
+        width: 22.67vw;
+        height: 79.2vw;
+    }
+
+    #instagram .instagram_post .posting .icon_img {
+        width: 4vw;
+        margin: 1.6vw;
+    }
+
+    #instagram .instagram_post .posting .posting_date {
+        padding-right: 1.87vw;
+    }
+
+    .campaign {
+        background-image: url(../images/cv_sp.jpg);
+    }
+
+    .campaign .flex_sb {
+        padding-top: 5.33vw;
+    }
+
+    .campaign .campaign_img_sp {
+        width: 28.8vw;
+    }
+
+    .campaign .campaign_img_box .usual_price {
+        padding-top: 4vw;
+    }
+
+    .campaign .sp_only .usual_price_01 {
+        font-size: 3.36vw;
+    }
+
+    .campaign .sp_only .usual_price_02 {
+        font-size: 3.84vw;
+        padding-top: 1.6vw;
+    }
+
+    .campaign h4 {
+        font-size: 3.73vw;
+    }
+
+    .campaign h4+div {
+        font-size: 2.67vw;
+        padding-bottom: 1.5vw;
+    }
+
+    .campaign .capacity {
+        font-size: 2.88vw;
+        padding-top: 4vw;
+        text-align: left;
+    }
+
+    .campaign .price_box .flex {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .campaign .price_box .lead {
+        padding-top: 4vw;
+    }
+
+    .campaign .price_box .lead .cancel {
+        font-size: 3.47vw;
+    }
+
+    .campaign .price_box .lead .limit {
+        font-size: 2.67vw;
+        padding-top: 0.8vw;
+    }
+
+    .campaign .bargain_price {
+        font-size: 14.4vw;
+        padding-top: 5vw;
+    }
+
+    .campaign .btn {
+        font-size: 4.32vw;
+        letter-spacing: .6em;
+        width: 85%;
+        border-radius: 2.67vw;
+        padding: 2.4vw 0;
+        margin: 0 auto;
+        text-indent: 5vw
+    }
+
+    #empathy {
+        background-image: url(../images/empathy_sp.jpg);
+    }
+
+    #empathy .contents_width {
+        padding-top: 3.2vw;
+    }
+
+    #empathy .contents_width h2 {
+        font-size: 5vw;
+    }
+
+    #empathy .checkbox {
+        padding-top: 10.6vw;
+        padding-bottom: 20vw;
+    }
+
+    #empathy .checkbox .checklist img {
+        width: 3.47vw;
+    }
+
+    #empathy .checkbox .checklist span {
+        font-size: 3.36vw;
+    }
+
+    #empathy .checkbox .checklist:nth-child(n + 2) {
+        padding-top: 5.8vw;
+    }
+
+    #exhibit .contents_width {
+        padding-top: 4.53vw;
+        padding-bottom: 9.6vw;
+    }
+
+    #exhibit .contents_width h6 {
+        font-size: 4.22vw;
+        margin-bottom: 5.87vw;
+    }
+
+    #exhibit .contents_width .flex_sb {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #exhibit .exhibit02 .contents_width .reverse {
+        flex-direction: column-reverse;
+    }
+
+    #exhibit .contents_width .flex_sb img {
+        width: 76.8vw;
+    }
+
+    #exhibit .contents_width .flex_sb .exhibit_text {
+        width: 100%;
+        padding: 1.33vw;
+    }
+
+    #exhibit .contents_width .flex_sb div p {
+        line-height: 1.65;
+        font-size: 3.36vw;
+    }
+
+    #exhibit .contents_width .flex_sb div p:nth-child(n + 2) {
+        padding-top: 0;
+    }
+
+    #exhibit .arrow_img {
+        left: 34.99vw;
+        top: 101vw;
+        width: 28.8vw;
+    }
+
+    #point h3,
+    #use h3 {
+        font-size: 4.8vw;
+        line-height: calc(21.6 / 18);
+        padding-top: 2.99vw;
+    }
+
+    #point .flex_sb {
+        flex-direction: column;
+    }
+
+    #point .point_text,
+    #point .point_contents_r .point_text {
+        width: 100%;
+        margin: 0;
+    }
+
+    #point .point_title {
+        font-size: 4.22vw;
+        line-height: calc(19 / 15.84);
+    }
+
+    #point .point_text .description {
+        font-size: 3.36vw;
+        line-height: calc(18.9 / 12.6);
+        padding-top: 1.8vw;
+    }
+
+    #point figure img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #point figure figcaption {
+        font-size: 2.28vw;
+        line-height: calc(16.2 / 10.8);
+        padding-top: 5px;
+    }
+
+    #use {
+        background-image: url(../images/use_sp.jpg);
+    }
+
+    #use .flex_sb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #use .step_text::before {
+        display: none;
+    }
+
+    #use .step_box {
+        margin-top: 5.3vw;
+        padding-bottom: 5.3vw;
+    }
+
+    #use .step_box .step_img {
+        width: 100%;
+        margin: 5.33vw 0 0;
+    }
+
+    #use .step_text {
+        position: relative;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #use .step_box .subtitle {
+        font-size: 4.22vw;
+        line-height: calc(19 / 15.84);
+        padding-top: 0;
+    }
+
+    #use .step_box .subtitle_desc {
+        font-size: 3.36vw;
+        line-height: calc(18.9 / 12.6);
+        padding-top: 1.33vw;
+    }
+
+    #faq {
+        background-image: url(../images/Q_A_sp.jpg);
+        background-size: cover;
+        height: auto;
+    }
+
+    #faq dl {
+        font-size: 3.36vw;
+        padding-top: 0;
+    }
+
+    #faq dl dt {
+
+        line-height: calc(18.9 / 12.6);
+        margin-top: 8vw;
+        padding-left: 6.67vw;
+    }
+
+    #faq dl dt::before {
+        font-size: 5.76vw;
+        transform: translateY(-30%);
+    }
+
+    #faq dl dd {
+        line-height: calc(18.9 / 12.6);
+        margin-top: 5.33vw;
+        padding: 0 0 6.67vw 6.67vw;
+    }
+
+    #faq dl dd::before {
+        font-size: 5.76vw;
+        transform: translateY(-30%);
+    }
+
+    #order .order_title {
+        border-radius: 9.5px;
+        font-size: 4.32vw;
+        margin-bottom: 9vw;
+        padding: 5px;
+    }
+
+    #order .form_input {
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    #order .form_column {
+        display: block;
+        padding-top: 0;
+    }
+
+    #order .form_label {
+        font-size: 3.36vw;
+        line-height: calc(18.9 / 12.6);
+        margin-top: 12px;
+    }
+
+    #order .form_label::after {
+        top: 0;
+        font-size: 2.88vw;
+        width: 6.72vw;
+        height: 4.58vw;
+        left: auto;
+    }
+
+    #order .short,
+    #order .long {
+        width: 100%;
+        padding: 1.33vw 0 1.6vw 1.6vw;
+    }
+
+    #order .spacing {
+        margin-top: 10vw;
+    }
+
+}
