@@ -2,43 +2,43 @@
 
 @font-face {
     font-family: GenShinGothic;
-    src: url("../fonts/GenShinGothic-Bold.woff") format("woff");
+    src: url("/../fonts/GenShinGothic-Bold.woff") format("woff");
     font-weight: 700;
 }
 
 @font-face {
     font-family: GenShinGothic;
-    src: url("../fonts/GenShinGothic-Heavy.woff") format("woff");
+    src: url("/../fonts/GenShinGothic-Heavy.woff") format("woff");
     font-weight: 900;
 }
 
 @font-face {
     font-family: GenShinGothic;
-    src: url("../fonts/GenShinGothic-Medium.woff") format("woff");
+    src: url("/../fonts/GenShinGothic-Medium.woff") format("woff");
     font-weight: 500;
 }
 
 @font-face {
     font-family: HannariMincho;
-    src: url("../fonts/HannariMincho-Regular.woff") format("woff");
+    src: url("/../fonts/HannariMincho-Regular.woff") format("woff");
     font-weight: 400;
 }
 
 @font-face {
     font-family: NotoSansJP;
-    src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
+    src: url("/../fonts/NotoSansJP-Medium.woff") format("woff");
     font-weight: 500;
 }
 
 @font-face {
     font-family: Philosopher;
-    src: url("../fonts/Philosopher-Italic.woff") format("woff");
+    src: url("/../fonts/Philosopher-Italic.woff") format("woff");
     font-weight: italic;
 }
 
 @font-face {
     font-family: Philosopher;
-    src: url("../fonts/Philosopher-Regular.woff") format("woff");
+    src: url("/../fonts/Philosopher-Regular.woff") format("woff");
     font-weight: 400;
 }
 
@@ -111,7 +111,7 @@ li {
 }
 
 header {
-    background-image: url(../images/header.jpg);
+    background-image: url(/../images/header.jpg);
     background-size: cover;
     height: 66.62vw;
 }
@@ -217,7 +217,7 @@ header .wrapper img {
 }
 
 .campaign {
-    background-image: url(../images/cv.jpg);
+    background-image: url(/../images/cv.jpg);
     background-size: cover;
 }
 
@@ -317,7 +317,7 @@ header .wrapper img {
 }
 
 #empathy {
-    background-image: url(../images/empathy.jpg);
+    background-image: url(/../images/empathy.jpg);
     background-size: cover;
     height: auto;
 }
@@ -362,7 +362,7 @@ header .wrapper img {
 }
 
 .exhibit_item_01 {
-    background-image: url(../images/exhibit1.jpg);
+    background-image: url(/../images/exhibit1.jpg);
     background-size: cover;
     height: auto;
 }
@@ -404,7 +404,7 @@ header .wrapper img {
 }
 
 #exhibit .exhibit02 {
-    background-image: url(../images/exhibit2.jpg);
+    background-image: url(/../images/exhibit2.jpg);
     background-size: cover;
     height: auto;
 }
@@ -422,7 +422,7 @@ header .wrapper img {
 }
 
 #point {
-    background-image: url(../images/benefit.jpg);
+    background-image: url(/../images/benefit.jpg);
     background-size: cover;
 }
 
@@ -489,7 +489,7 @@ header .wrapper img {
 }
 
 #use {
-    background-image: url(../images/use.jpg);
+    background-image: url(/../images/use.jpg);
     background-size: cover;
     height: auto;
 }
@@ -544,7 +544,7 @@ header .wrapper img {
 }
 
 #faq {
-    background-image: url(../images/Q_A.jpg);
+    background-image: url(/../images/Q_A.jpg);
     background-size: cover;
     height: auto;
 }
@@ -789,7 +789,7 @@ button#submit_button {
 
     header {
         position: relative;
-        background-image: url(../images/header_sp.jpg);
+        background-image: url(/../images/header_sp.jpg);
         height: 145vw;
     }
 
@@ -892,7 +892,7 @@ button#submit_button {
     }
 
     .campaign {
-        background-image: url(../images/cv_sp.jpg);
+        background-image: url(/../images/cv_sp.jpg);
     }
 
     .campaign .flex_sb {
@@ -965,7 +965,7 @@ button#submit_button {
     }
 
     #empathy {
-        background-image: url(../images/empathy_sp.jpg);
+        background-image: url(/../images/empathy_sp.jpg);
     }
 
     #empathy .contents_width {
@@ -1076,7 +1076,7 @@ button#submit_button {
     }
 
     #use {
-        background-image: url(../images/use_sp.jpg);
+        background-image: url(/../images/use_sp.jpg);
     }
 
     #use .flex_sb {
@@ -1117,7 +1117,7 @@ button#submit_button {
     }
 
     #faq {
-        background-image: url(../images/Q_A_sp.jpg);
+        background-image: url(/../images/Q_A_sp.jpg);
         background-size: cover;
         height: auto;
     }
