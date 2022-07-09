@@ -440,22 +440,23 @@
         <dl>
           <dt>どんな人にオススメですか？</dt>
           <dd class="answer_text">髪にツヤや潤いがない、頭皮が乾燥している、妊娠中に白髪が目立つ等の悩みを抱えた女性にオススメです。
-            <br>もちろん、男性やお子様にもご使用いただけます。</dd>
+            <br>もちろん、男性やお子様にもご使用いただけます。
+          </dd>
           <dt>どのくらいで実感できるの？</dt>
           <dd>すぐに実感できる方もいれば、時間をかけてご実感された方もいらっしゃいます。
             特に、3ヶ月ほど続けたお客様から満足のお声を多くいただいております。</dd>
-            <dt>使用量の目安は？</dt>
-            <dd>3プッシュを目安に、髪の長さに合わせてご使用ください。<br>
-              少なすぎると、効果が感じられない可能性もございます。目安量をたっぷりとお使いください。</dd>
-            <dt>本当にコンディショナーやトリートメントはいらないの？</dt>
-            <dd>洗うのと同時に髪を潤してくれるので通常は必要ありません。<br>
-              どうしても気になる方は合わせてトリートメントをご使用ください。</dd>
-            <dt>ヘアカラーをしていても問題ないですか？</dt>
-            <dd>全ての髪色の方がご使用いただけます。<br>
-              自然で美しい黒髪へと導く効果もありますが、カラーリングが落ちるのを防ぐ効果もあります。</dd>
-            <dt>妊娠・授乳中でも使えますか？</dt>
-            <dd>特に問題はございません。<br>
-              万が一、香りで気分が悪くなった際はご使用をおやめください。</dd>
+          <dt>使用量の目安は？</dt>
+          <dd>3プッシュを目安に、髪の長さに合わせてご使用ください。<br>
+            少なすぎると、効果が感じられない可能性もございます。目安量をたっぷりとお使いください。</dd>
+          <dt>本当にコンディショナーやトリートメントはいらないの？</dt>
+          <dd>洗うのと同時に髪を潤してくれるので通常は必要ありません。<br>
+            どうしても気になる方は合わせてトリートメントをご使用ください。</dd>
+          <dt>ヘアカラーをしていても問題ないですか？</dt>
+          <dd>全ての髪色の方がご使用いただけます。<br>
+            自然で美しい黒髪へと導く効果もありますが、カラーリングが落ちるのを防ぐ効果もあります。</dd>
+          <dt>妊娠・授乳中でも使えますか？</dt>
+          <dd>特に問題はございません。<br>
+            万が一、香りで気分が悪くなった際はご使用をおやめください。</dd>
         </dl>
       </div>
     </section>
@@ -501,11 +502,172 @@
       </div>
     </section>
 
+    <div id="order">
+      <div class="contents_width">
 
+        <div class="customer_wrapper">
+          <div class="order_title">お客様情報のご入力</div>
 
+          <form method="POST" action="#" id="order_form">
+            <div id="order_form_area">
 
+              <div class="form_column">
+                <div class="form_label required">
+                  お名前
+                </div>
+                <div class="form_input">
+                  <input type="text" name="username" id="username" class="form_parts short" placeholder="山田花子">
+                </div>
+              </div>
+              <div class="form_column">
+                <div class="form_label required">
+                  フリガナ
+                </div>
+                <div class="form_input">
+                  <input type="text" name="user_kana" id="user_kana" class="form_parts short" placeholder="ヤマダハナコ">
+                </div>
+              </div>
+              <div class="form_column spacing">
+                <div class="form_label required">
+                  郵便番号
+                </div>
+                <div class="form_input">
+                  <input type="number" name="postal_code" id="postal_code" class="form_parts short"
+                    placeholder="1500031">
+                </div>
+              </div>
+              <div class="form_column">
+                <div class="form_label required">
+                  都道府県
+                </div>
+                <div class="form_input">
+                  <select name="prefecture" id="prefecture" class="form_parts short">
+                    <option value="">選択してください</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <option value="岩手県">岩手県</option>
+                    <option value="宮城県">宮城県</option>
+                    <option value="秋田県">秋田県</option>
+                    <option value="山形県">山形県</option>
+                    <option value="福島県">福島県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="新潟県">新潟県</option>
+                    <option value="富山県">富山県</option>
+                    <option value="石川県">石川県</option>
+                    <option value="福井県">福井県</option>
+                    <option value="山梨県">山梨県</option>
+                    <option value="長野県">長野県</option>
+                    <option value="岐阜県">岐阜県</option>
+                    <option value="静岡県">静岡県</option>
+                    <option value="愛知県">愛知県</option>
+                    <option value="三重県">三重県</option>
+                    <option value="滋賀県">滋賀県</option>
+                    <option value="京都府">京都府</option>
+                    <option value="大阪府">大阪府</option>
+                    <option value="兵庫県">兵庫県</option>
+                    <option value="奈良県">奈良県</option>
+                    <option value="和歌山県">和歌山県</option>
+                    <option value="鳥取県">鳥取県</option>
+                    <option value="島根県">島根県</option>
+                    <option value="岡山県">岡山県</option>
+                    <option value="広島県">広島県</option>
+                    <option value="山口県">山口県</option>
+                    <option value="徳島県">徳島県</option>
+                    <option value="香川県">香川県</option>
+                    <option value="愛媛県">愛媛県</option>
+                    <option value="高知県">高知県</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="沖縄県">沖縄県</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form_column">
+                <div class="form_label required">
+                  市区町村
+                </div>
+                <div class="form_input">
+                  <input type="text" name="address_1" id="address_1" class="form_parts long" placeholder="東京市大阪区煌木町１ー４">
+                </div>
+              </div>
+              <div class="form_column">
+                <div class="form_label optional">
+                  マンション名
+                </div>
+                <div class="form_input">
+                  <input type="text" name="address_2" id="address_2" class="form_parts long" placeholder="トップマンション１０１号">
+                </div>
+              </div>
+              <div class="form_column spacing">
+                <div class="form_label required">
+                  電話番号
+                </div>
+                <div class="form_input">
+                  <input type="text" name="tel_no" id="tel_no" class="form_parts short" placeholder="00000000000">
+                </div>
+              </div>
+              <div class="form_column">
+                <div class="form_label required">
+                  メールアドレス
+                </div>
+                <div class="form_input">
+                  <input type="text" name="email" id="email" class="form_parts long" placeholder="hana8787@example.com">
+                </div>
+              </div>
+              <div class="form_column spacing">
+                <div class="form_label required">
+                  パスワード
+                </div>
+                <div class="form_input">
+                  <input type="text" name="password" id="password" class="form_parts short" placeholder="4文字以上、英数字含む">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="payment_wrapper">
+          <div class="order_title">お支払い方法</div>
+          <div class="payment">
+            <div>
+              <input type="radio" name="payment_select" value="クレジットカード">クレジットカード
+            </div>
+            <div class="radio_lead">
+              <input type="radio" name="payment_select" value="銀行振込">銀行振込
+            </div>
+            <div class="radio_lead">
+              <input type="radio" name="payment_select" value="着払い">着払い
+            </div>
+          </div>
+          <div id="form_submit">
+            <button type="submit" name="submit_button" id="submit_button">注文する▼</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
+    <div class="contents_width">
+      <ul class="footer_nav">
+        <li>会社概要</li>
+        <li>特定商取引法に基づく表記及び返品交換について</li>
+        <li>利用規約</li>
+        <li>FAQ</li>
+        <li>プライバシーポリシー</li>
+      </ul>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
