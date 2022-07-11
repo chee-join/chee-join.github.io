@@ -681,22 +681,26 @@ header .wrapper img {
     width: 45vw;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
+footer {
+    background-image: url(/images/footer.jpg);
+    background-size: cover;
 }
 
 footer .footer_nav {
-    position: relative;
-    font-size: 1.46vw;
+    padding: 1.98vw 0;
+    text-align: center;
 }
 
-footer .footer_nav::after {
-    position: absolute;
-    content: '|';
+footer .footer_nav li{
+    display: inline-block;
+    border-right: solid 1px #97a7a3;
     font-size: 1.46vw;
+    padding:0 10px;
 }
 
+footer .footer_nav li:last-child {
+    border-right: none;
+}
 
 #order .form_parts {
     font-family: GenShinGothic;
@@ -732,10 +736,6 @@ input[type=radio] {
     vertical-align: middle;
     margin-right: 0.7vw;
 }
-
-/* #order .payment_wrapper .payment:nth-child(n + 2) {
-    margin-top: 4vw;
-} */
 
 #order .payment_wrapper .payment .radio_lead {
     margin-top: 4vw;
@@ -882,7 +882,7 @@ button#submit_button {
         padding-top: 5.33vw;
     }
 
-    .campaign .campaign_img_sp {
+    .campaign .campaign_img {
         width: 28.8vw;
     }
 
@@ -1172,6 +1172,13 @@ button#submit_button {
 
     #order .spacing {
         margin-top: 10vw;
+    }
+
+    footer .footer_nav li {
+        font-size: 2vw;
+        padding: 0 5px;
+        line-height: calc(15.12 / 10.8);
+
     }
 
 }
