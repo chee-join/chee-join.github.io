@@ -225,6 +225,12 @@ header .wrapper img {
     padding: 4.54vw 0;
 }
 
+.campaign .contents_width .block_title {
+    text-align: center;
+}
+
+
+
 .campaign_img {
     width: 29.36vw;
 }
